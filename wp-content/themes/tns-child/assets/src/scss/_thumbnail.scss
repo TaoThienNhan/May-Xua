@@ -1,0 +1,15 @@
+.thumbnail-wrapper {
+    max-width: 1780px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    .slick-initialized {
+        .slick-slide {
+            margin: 0 13px;
+        }
+    }
+    .thumbnail-img img{
+        width: 100%;
+        object-fit: cover;
+    }
+}

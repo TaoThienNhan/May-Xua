@@ -45,4 +45,32 @@ $('.service-slider').slick({
        
       ]
   });
+// Slide thumbnail
+  $('.slide-thumbnail').slick({
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    responsive: [
+      {
+        breakpoint: 1366,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 2,
+          }
+        },
+        {
+          breakpoint: 599,
+          settings: {
+            slidesToShow: 1,
+          }
+        },
+      ]
+  });
 });
