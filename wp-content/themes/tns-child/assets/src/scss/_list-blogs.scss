@@ -1,0 +1,198 @@
+.list-blogs {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-family: "Manrope", sans-serif;
+  font-family: "Playfair Display", serif;
+
+  /* Font size mặc định cho PC và các thiết bị lớn hơn */
+  .text-15 {
+    font-size: 15px;
+  }
+  .text-18 {
+    font-size: 18px;
+  }
+  .text-24 {
+    font-size: 24px;
+  }
+  .text-30 {
+    font-size: 30px;
+  }
+  .text-45 {
+    font-size: 45px;
+  }
+  .text-70 {
+    font-size: 70px;
+  }
+  .mt-100 {
+    margin-top: 150px;
+  }
+  .position-lg-relative {
+    position: relative;
+  }
+  .position-lg-absolute {
+    position: absolute;
+  }
+
+  /* Các media queries cho mobile */
+  @media (max-width: 575px) {
+    .text-15 {
+      font-size: 12px;
+    }
+    .text-18 {
+      font-size: 14px;
+    }
+    .text-24 {
+      font-size: 16px;
+    }
+    .text-30 {
+      font-size: 20px;
+    }
+    .text-45 {
+      font-size: 28px;
+    }
+    .text-70 {
+      font-size: 40px;
+    }
+    .position-lg-relative {
+      position: static;
+    }
+    .position-lg-absolute {
+      position: static;
+    }
+    .mt-100 {
+      margin-top: 30px;
+    }
+  }
+
+  /* Các media queries cho tablet */
+  @media (min-width: 576px) and (max-width: 1023px) {
+    .text-15 {
+      font-size: 16px;
+    }
+    .text-18 {
+      font-size: 20px;
+    }
+    .text-24 {
+      font-size: 26px;
+    }
+    .text-30 {
+      font-size: 32px;
+    }
+    .text-45 {
+      font-size: 42px;
+    }
+    .text-70 {
+      font-size: 56px;
+    }
+    .position-lg-relative {
+      position: static;
+    }
+    .position-lg-absolute {
+      position: static;
+    }
+    .mt-100 {
+      margin-top: 80px;
+    }
+  }
+
+  .fw-100 {
+    font-weight: 100;
+  }
+
+  .fw-200 {
+    font-weight: 200;
+  }
+
+  .fw-300 {
+    font-weight: 300;
+  }
+
+  .fw-400 {
+    font-weight: 400;
+  }
+
+  .fw-500 {
+    font-weight: 500;
+  }
+
+  .fw-600 {
+    font-weight: 600;
+  }
+
+  .fw-700 {
+    font-weight: 700;
+  }
+
+  .fw-800 {
+    font-weight: 800;
+  }
+
+  .fw-900 {
+    font-weight: 900;
+  }
+
+  .be-font {
+    font-family: "Be Vietnam Pro", sans-serif;
+  }
+  .play-font {
+    font-family: "Playfair Display", sans-serif;
+  }
+  .manrope-font {
+    font-family: "Manrope", sans-serif;
+  }
+
+  .list-blogss {
+    background-color: white;
+    padding-top: 100px;
+  }
+
+  .text-blue {
+    color: #385469;
+  }
+
+  .bg-brown {
+    background: #c89f63;
+  }
+
+  .img-date {
+    position: relative;
+    img {
+      border-radius: 5px;
+      min-width: 200px;
+      max-width: 650px;
+      max-height: 420px;
+    }
+    .blog-date {
+      position: absolute;
+      bottom: -20px;
+      border-radius: 10px;
+      word-spacing: 5px;
+    }
+  }
+
+  /* Ẩn border cho các page-item chứa số 1, 2, và 3 */
+  .pagination .page-item:nth-child(2) a.page-link,
+  .pagination .page-item:nth-child(3) a.page-link,
+  .pagination .page-item:nth-child(4) a.page-link {
+    border: 1px solid rgb(255, 255, 255);
+  }
+
+  /* Đổi màu nền cho trang đang kích hoạt (page-item active) */
+  .pagination .page-item.active a.page-link {
+    background: white;
+    color: #c89f63; /* Đổi màu chữ trắng để đảm bảo độ tương phản */
+  }
+
+  /* Đổi màu nền cho trang không kích hoạt (page-item) */
+  .pagination .page-item:not(.active) a.page-link {
+    color: rgb(0, 0, 0); /* Đổi màu chữ trắng để đảm bảo độ tương phản */
+  }
+
+  /* Thay đổi giao diện của nút trước và nút sau */
+  .pagination .page-item:first-child a.page-link,
+  .pagination .page-item:last-child a.page-link {
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.121);
+    color: rgba(0, 0, 0, 0.714);
+    padding: 5px 20px;
+  }
+}
