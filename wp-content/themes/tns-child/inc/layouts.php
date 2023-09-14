@@ -13,6 +13,7 @@ add_action('tns_header', function (){
 add_action('tns_landing', function (){
     get_template_part('template-parts/header');
     get_template_part('template-parts/welcome');
+    get_template_part('template-parts/home-service');
     get_template_part('template-parts/home-service-2');
 });
 

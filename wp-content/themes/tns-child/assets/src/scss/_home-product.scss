@@ -1,0 +1,119 @@
+//Product-start
+
+.thin-title{
+  color: #C89F63;
+  font-family: Be VietNam Pro;
+  font-size: 15px;
+  font-weight: lighter;
+}
+
+.strong-title {
+  color: #385469;
+  font-family: Playfair_Display;
+  font-size: 50px;
+  font-weight: bolder;
+  display: block;
+}
+
+//.products-bg {
+//  position: relative;
+//}
+//
+//.products-bg::after {
+//  content: "";
+//  position: absolute;
+//  left: 50%;
+//  /* Đặt left ở giữa */
+//  top: 50%;
+//  /* Đặt top ở giữa */
+//  transform: translate(-50%, -50%);
+//  /* Dịch chuyển 50% chiều ngang và chiều dọc */
+//  height: 102%;
+//  border-radius: 5px;
+//  width: 90%;
+//  background: #e3e3e3;
+//  //opacity: 80%;
+//  z-index: -1;
+//}
+
+.product-item {
+  text-align: center;
+}
+
+.image-product {
+  box-shadow: 4px 5px 4px 0px #E1E2E6;
+}
+
+.image-product:hover{
+  box-shadow: none;
+  border: 1px solid #805346;
+  transition: 0.3 ease-in-out;
+}
+
+.name-product {
+  font-family: Be VietNam Pro;
+  font-weight: bolder;
+  padding-top: 1rem;
+  font-size: 18px;
+}
+
+.price-product{
+  font-family: Manrope;
+  font-size: 15px;
+  font-weight: lighter;
+  margin: 0 0 0px!important;
+}
+
+/* Media query cho các kích thước màn hình */
+@media (max-width: 1300px) {
+  .strong-title {
+    font-size: 42px;
+  }
+  .name-product {
+    font-size: 22px;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .strong-title {
+    font-size: 32px;
+  }
+  .name-product {
+    font-size: 18px;
+  }
+  .price-product{
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .strong-title {
+    font-size: 24px;
+  }
+  .name-product {
+    font-size: 14px;
+  }
+  .price-product{
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 390px) {
+  .btn-under {
+    font-size: 8px;
+  }
+  .name-product {
+    font-family: Be VietNam Pro;
+    font-weight: bolder;
+    padding-top: 1rem;
+    font-size: 12px;
+  }
+
+  .price-product{
+    font-family: Manrope;
+    font-size: 10px;
+    font-weight: lighter;
+    margin: 0 0 0px!important;
+  }
+}
