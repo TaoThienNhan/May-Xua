@@ -114,17 +114,14 @@ function my_wp_nav_menu_objects($items, $args) {
     foreach ($items as &$item) {
 
         $menu_item_url = $item->url;
-
-        $icon = get_field('icon', $item);
-
-        if ($icon) {
-            $item->title .= ' <span class="menu-item-icon">' . wp_get_attachment_image($icon) . '</span>';
-        }
-
         $menu_item_url = trailingslashit($menu_item_url);
 
         if ($current_page_url === $menu_item_url) {
             $item->classes[] = 'active';
+            $item->title .= ' <br>
+            <span class="menu-item-icon px-1">
+                <i class="fa-brands fa-pagelines"></i>
+            </span>';
         }
 
     }

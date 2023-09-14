@@ -4,14 +4,16 @@
  * The header for our theme
  */
 add_action('tns_header', function (){
-	get_template_part('template-parts/header');
+	//
 });
 
 /**
  * The landing page for our theme
  */
 add_action('tns_landing', function (){
+    get_template_part('template-parts/header');
     get_template_part('template-parts/welcome');
+    get_template_part('template-parts/home-service-2');
 });
 
 /**
