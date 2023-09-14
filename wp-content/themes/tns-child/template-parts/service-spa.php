@@ -24,7 +24,7 @@
         /*width: 378px;*/
         height: 733px;
     }
-    .img-right-last{
+    .d-md-none d-lg-block img-right-last{
         background: url("<?=get_stylesheet_directory_uri()?>/assets/src/images/Rectangle%20320.png");
         background-size: cover;
         width: 180px;
@@ -49,10 +49,16 @@
                         <div class="carousel-item p-5  active">
                             <div class="slider-1 d-flex justify-content-center align-items-center row">
                                 <div class="d-flex row col-12 col-lg-6 banner-service">
-                                    <div class="col-12 col-lg-8 img-right-frist"></div>
-                                    <div class="col-12 col-lg-8 img-right-last"></div>
-<!--                                    <img src="--><?php //=get_stylesheet_directory_uri()?><!--/assets/src/images/Rectangle%20319.png"  alt="...">-->
-<!--                                    <img src="--><?php //=get_stylesheet_directory_uri()?><!--/assets/src/images/Rectangle%20320.png" class=" col-12 col-lg-4" alt="...">-->
+                                    <div class="col-12 col-lg-8 img-right-frist" style="
+                                            background: url(<?=get_stylesheet_directory_uri()?>/assets/src/images/Rectangle%20319.png);
+                                            background-size: cover;
+                                            /*width: 378px;*/
+                                            height: 733px;"></div>
+                                    <div class="col-12 col-lg-8 d-md-none d-lg-block img-right-last" style="
+                                            background: url(<?=get_stylesheet_directory_uri()?>/assets/src/images/Rectangle%20320.png);
+                                            background-size: cover;
+                                            width: 180px;
+                                            height: 733px;"></div>
                                 </div>
                                 <div class="silder-text col-12 col-lg-6">
                                     <div class="title-header d-flex">
@@ -92,8 +98,16 @@
                         <div class="carousel-item p-5  ">
                             <div class="slider-1 d-flex justify-content-center align-items-center row">
                                 <div class="d-flex row col-12 col-lg-6">
-                                    <img src="<?=get_stylesheet_directory_uri()?>/assets/src/images/Rectangle%20319.png" class=" col-12 col-lg-8" alt="...">
-                                    <img src="<?=get_stylesheet_directory_uri()?>/assets/src/images/Rectangle%20320.png" class=" col-12 col-lg-4" alt="...">
+                                    <div class="col-12 col-lg-8 img-right-frist" style="
+                                            background: url(<?=get_stylesheet_directory_uri()?>/assets/src/images/Rectangle%20319.png);
+                                            background-size: cover;
+                                            /*width: 378px;*/
+                                            height: 733px;"></div>
+                                    <div class="col-12 col-lg-8 d-md-none d-lg-block img-right-last" style="
+                                            background: url(<?=get_stylesheet_directory_uri()?>/assets/src/images/Rectangle%20320.png);
+                                            background-size: cover;
+                                            width: 180px;
+                                            height: 733px;"></div>
                                 </div>
                                 <div class="silder-text col-12 col-lg-6">
                                     <div class="title-header d-flex">
@@ -131,8 +145,16 @@
                         <div class="carousel-item p-5  ">
                             <div class="slider-1 d-flex justify-content-center align-items-center row">
                                 <div class="d-flex row col-12 col-lg-6">
-                                    <img src="<?=get_stylesheet_directory_uri()?>/assets/src/images/Rectangle%20319.png" class=" col-12 col-lg-8" alt="...">
-                                    <img src="<?=get_stylesheet_directory_uri()?>/assets/src/images/Rectangle%20320.png" class=" col-12 col-lg-4" alt="...">
+                                    <div class="col-12 col-lg-8 img-right-frist" style="
+                                            background: url(<?=get_stylesheet_directory_uri()?>/assets/src/images/Rectangle%20319.png);
+                                            background-size: cover;
+                                            /*width: 378px;*/
+                                            height: 733px;"></div>
+                                    <div class="col-12 col-lg-8 d-md-none d-lg-block img-right-last" style="
+                                            background: url(<?=get_stylesheet_directory_uri()?>/assets/src/images/Rectangle%20320.png);
+                                            background-size: cover;
+                                            width: 180px;
+                                            height: 733px;"></div>
                                 </div>
                                 <div class="silder-text col-12 col-lg-6">
                                     <div class="title-header d-flex">
