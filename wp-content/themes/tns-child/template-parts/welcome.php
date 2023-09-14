@@ -24,15 +24,14 @@
             </div>
             <div class="welcome-block col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4">
                 <div class="border">
-                        <div class="welcome-block__avatar text-center">
-                            <img src="<?= get_stylesheet_directory_uri()?>/assets/src/images/welcome-avatar.svg" alt="avatar" >
-                        </div>
-                        <p>“Sed ut perspiciatis unde omnis iste <br> natus error sit voluptatem<br> accusantium doloremque ”</p>
-                        <div class="welcome-block__phone">
-                            <img src="<?= get_stylesheet_directory_uri()?>/assets/src/images/welcome_icon.svg" alt="phone"><br>
-                            <a href="">039- 599120</a>
-                        </div>
-                   
+                    <div class="welcome-block__avatar text-center">
+                        <img src="<?= get_stylesheet_directory_uri()?>/assets/src/images/welcome-avatar.svg" alt="avatar" >
+                    </div>
+                    <p>“Sed ut perspiciatis unde omnis iste <br> natus error sit voluptatem<br> accusantium doloremque ”</p>
+                    <div class="welcome-block__phone">
+                        <img src="<?= get_stylesheet_directory_uri()?>/assets/src/images/welcome_icon.svg" alt="phone"><br>
+                        <a href="">039- 599120</a>
+                    </div>
                 </div>
             </div>
         </div>

@@ -53,11 +53,11 @@ p {
 ol,
 ul {
 	margin: 0;
-	padding: 0;
-}
+	padding-left: 25px;
 
-li {
-	list-style-type: none;
+	li {
+		padding-bottom: 5px;
+	}
 }
 
 hr {
@@ -214,4 +214,8 @@ th {
 			}
 		}
 	}
+}
+
+#wpadminbar {
+	position: fixed !important;
 }

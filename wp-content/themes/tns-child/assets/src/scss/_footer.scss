@@ -1,0 +1,42 @@
+.footer {
+  color: white;
+  font-size: 17px;
+
+  a {
+    color: white;
+    background-size: contain;
+  }
+
+  .col-md-2, .col-md-3 {
+    .title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 15px;
+      font-family: Playfair Display;
+    }
+  }
+
+  .social-media {
+    .icon {
+      padding: 10px;
+      background: #FFFFFF;
+      margin: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 100%;
+    }
+  }
+
+  .et-db #et-boc .et_pb_module .forminator-ui.forminator-custom-form[data-design=default], .forminator-ui.forminator-custom-form[data-design=default] {
+    display: flex;
+  }
+
+  .forminator-ui#forminator-module-15.forminator-design--default .forminator-button-submit {
+    background-color: $primary !important;
+  }
+
+  .forminator-ui#forminator-module-15.forminator-design--default .forminator-input, .forminator-ui#forminator-module-15.forminator-design--default .forminator-input:hover, .forminator-ui#forminator-module-15.forminator-design--default .forminator-input:focus, .forminator-ui#forminator-module-15.forminator-design--default .forminator-input:active {
+    border-color: $primary !important;
+  }
+}
