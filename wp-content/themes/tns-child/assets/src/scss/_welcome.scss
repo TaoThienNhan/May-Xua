@@ -1,0 +1,261 @@
+.welcome-wrapper {
+    width: 100%;
+    height: 651px;
+}
+.welcome-title {
+    h5 {
+        color: $primary;
+        font-family: "Be Vietnam Pro";
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px; /* 200% */
+        margin-top: 58px; 
+        padding-left: 50px;
+        position: relative;
+    }
+    h5:before {
+        content: " ";
+        display:block;
+        width: 38px;
+        height: 1px;
+        background-color: #C89F63;
+        position: absolute;
+        left: 0;
+        top: 60%;
+    }
+
+    h2 {
+        color: $white;
+        font-family: Playfair Display;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 30px; /* 60% */
+        margin-top: 42px;
+    }
+    h4{
+        color: $white;
+        font-family: Be Vietnam Pro;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px; /* 176.471% */
+        letter-spacing: 6.8px;
+        margin-top: 34px;
+    }
+}
+.welcome-text {
+    margin-top: 34px;
+    height: 212px;
+    
+    p {
+        width: 752px;
+        color: $white;
+        font-family: Be Vietnam Pro;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px; /* 166.667% */
+        opacity: 0.7;
+        margin-bottom: 15px;
+     
+    }
+}
+.welcome-link {
+    a {
+        color: $primary;
+        font-family: Be Vietnam Pro;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 30px; /* 150% */
+    }
+}
+.welcome-block {
+    width: 370px;
+    height: 569px;
+    border-radius: 5px;
+    background: linear-gradient(180deg, #503B2D 0%, #352E28 100%);
+   
+   .border {
+    width: 350px;
+    height: 549px;
+    border: 0.5px solid $white;
+    margin-top: 10px;
+   }
+    .welcome-block__avatar {
+      img {
+        margin-top: 44px;
+      }
+    }
+    p{
+        color: $white;
+        text-align: center;
+        font-family: Playfair Display;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 30px; /* 166.667% */
+        width: 306px;
+        margin-top: 48px;
+        margin-left: 34px;
+    }
+    .welcome-block__phone {
+        margin-top: 58px;
+        text-align: center;
+
+        a{
+            color: $white;
+            text-align: center;
+            font-family: Manrope;
+            font-size: 17px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1366px) {
+    
+    .welcome-text {
+        height: 282px;
+        p {
+            width: 482px;
+        }
+    }
+    .welcome-block {
+        width: 300px;
+        height: 569px;
+        border-radius: 5px;
+        background: linear-gradient(180deg, #503B2D 0%, #352E28 100%);
+       
+       .border {
+        width: 280px;
+        height: 549px;
+        border: 0.5px solid $white;
+        margin-top: 10px;
+       }
+       p {
+        width: 280px;
+        margin-top: 48px;
+        margin-left: 0px;
+    }
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .welcome-wrapper {
+        width: 100%;
+        height: 1200px;
+    }
+    .welcome-text {
+        height: 202px;
+        p {
+            width: 720px;
+        }
+    }
+    .welcome-block {
+        width: 450px;
+        height: 569px;
+        border-radius: 5px;
+        background: linear-gradient(180deg, #503B2D 0%, #352E28 100%);
+        margin: auto;
+        margin-top: 80px;
+      
+       
+       .border {
+        width: 430px;
+        height: 549px;
+        border: 0.5px solid $white;
+        margin-top: 10px;
+       }
+       p {
+        width: 280px;
+        margin-top: 48px;
+        margin-left: 75px;
+    }
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+    .welcome-wrapper {
+        width: 100%;
+        height: 1300px;
+    }
+    .welcome-text {
+        height: 272px;
+        p {
+            width: 520px;
+        }
+    }
+    .welcome-block {
+        width: 450px;
+        height: 569px;
+        border-radius: 5px;
+        background: linear-gradient(180deg, #503B2D 0%, #352E28 100%);
+        margin: auto;
+        margin-top: 80px;
+      
+       
+       .border {
+        width: 430px;
+        height: 549px;
+        border: 0.5px solid $white;
+        margin-top: 10px;
+       }
+       p {
+        width: 280px;
+        margin-top: 48px;
+        margin-left: 75px;
+    }
+    }
+
+}
+
+@media only screen and (max-width: 599px) {
+    .welcome-wrapper {
+        width: 100%;
+        height: 1400px;
+    }
+    .welcome-text {
+        height: 362px;
+        p {
+            width: 320px;
+        }
+    }
+    .welcome-title {
+
+        h2 {
+            color: $white;
+            font-family: Playfair Display;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: 30px; /* 60% */
+            margin-top: 42px;
+        }
+    }
+    .welcome-block {
+        width: 320px;
+        height: 569px;
+        border-radius: 5px;
+        background: linear-gradient(180deg, #503B2D 0%, #352E28 100%);
+        margin: auto;
+        margin-top: 80px;
+      
+       
+       .border {
+        width: 300px;
+        height: 549px;
+        border: 0.5px solid $white;
+        margin-top: 10px;
+       }
+       p {
+        width: 280px;
+        margin-top: 48px;
+        margin-left: 8px;
+    }
+    }
+}

@@ -105,3 +105,29 @@ function tns_theme_support(){
 }
 
 add_action('after_setup_theme', 'tns_theme_support', 9);
+
+add_filter('wp_nav_menu_objects', 'my_wp_nav_menu_objects', 10, 2);
+function my_wp_nav_menu_objects($items, $args) {
+
+    $current_page_url = trailingslashit($_SERVER['REQUEST_URI']);
+
+    foreach ($items as &$item) {
+
+        $menu_item_url = $item->url;
+
+        $icon = get_field('icon', $item);
+
+        if ($icon) {
+            $item->title .= ' <span class="menu-item-icon">' . wp_get_attachment_image($icon) . '</span>';
+        }
+
+        $menu_item_url = trailingslashit($menu_item_url);
+
+        if ($current_page_url === $menu_item_url) {
+            $item->classes[] = 'active';
+        }
+
+    }
+
+    return $items;
+}
