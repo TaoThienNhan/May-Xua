@@ -1,0 +1,182 @@
+.services  {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-family: "Manrope", sans-serif;
+  font-family: "Playfair Display", serif;
+
+  /* Font size mặc định cho PC và các thiết bị lớn hơn */
+  .text-15 {
+    font-size: 15px;
+  }
+  .text-18 {
+    font-size: 18px;
+  }
+  .text-24 {
+    font-size: 24px;
+  }
+  .text-30 {
+    font-size: 30px;
+  }
+  .text-45 {
+    font-size: 45px;
+  }
+  .text-70 {
+    font-size: 70px;
+  }
+  .mt-100 {
+    margin-top: 150px;
+  }
+  .position-lg-relative {
+    position: relative;
+  }
+  .position-lg-absolute {
+    position: absolute;
+  }
+
+  /* Các media queries cho mobile */
+  @media (max-width: 575px) {
+    .text-15 {
+      font-size: 12px;
+    }
+    .text-18 {
+      font-size: 14px;
+    }
+    .text-24 {
+      font-size: 16px;
+    }
+    .text-30 {
+      font-size: 20px;
+    }
+    .text-45 {
+      font-size: 28px;
+    }
+    .text-70 {
+      font-size: 40px;
+    }
+    .position-lg-relative {
+      position: static;
+    }
+    .position-lg-absolute {
+      position: static;
+    }
+    .mt-100 {
+      margin-top: 30px;
+    }
+  }
+
+  /* Các media queries cho tablet */
+  @media (min-width: 576px) and (max-width: 1023px) {
+    .text-15 {
+      font-size: 16px;
+    }
+    .text-18 {
+      font-size: 20px;
+    }
+    .text-24 {
+      font-size: 26px;
+    }
+    .text-30 {
+      font-size: 32px;
+    }
+    .text-45 {
+      font-size: 42px;
+    }
+    .text-70 {
+      font-size: 56px;
+    }
+    .position-lg-relative {
+      position: static;
+    }
+    .position-lg-absolute {
+      position: static;
+    }
+    .mt-100 {
+      margin-top: 80px;
+    }
+  }
+
+  .fw-100 {
+    font-weight: 100;
+  }
+
+  .fw-200 {
+    font-weight: 200;
+  }
+
+  .fw-300 {
+    font-weight: 300;
+  }
+
+  .fw-400 {
+    font-weight: 400;
+  }
+
+  .fw-500 {
+    font-weight: 500;
+  }
+
+  .fw-600 {
+    font-weight: 600;
+  }
+
+  .fw-700 {
+    font-weight: 700;
+  }
+
+  .fw-800 {
+    font-weight: 800;
+  }
+
+  .fw-900 {
+    font-weight: 900;
+  }
+
+  .be-font {
+    font-family: "Be Vietnam Pro", sans-serif;
+  }
+  .play-font {
+    font-family: "Playfair Display", sans-serif;
+  }
+  .manrope-font {
+    font-family: "Playfair Display", sans-serif;
+  }
+
+  .btn-white {
+    background-color: white;
+  }
+  .title-premium {
+    color: #c89f63;
+  }
+
+  .text-premium {
+    color: #385469;
+  }
+  .btn-right {
+    bottom: 0;
+    right: 0;
+  }
+
+  .btn-left {
+    bottom: 0;
+    left: 0;
+  }
+
+  .premium-servicess {
+    border-radius: 2vh;
+    padding: 100px 20px;
+    .img-service {
+      min-width: 150px;
+      max-height: 500px;
+    }
+    .col-left {
+      left: 5%;
+    }
+    .col-right {
+      right: 5%;
+    }
+    .service-box-content {
+      box-shadow: 0 0 10px white;
+    }
+  }
+}
+
+
