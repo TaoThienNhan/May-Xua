@@ -25,13 +25,36 @@
         background-repeat: no-repeat;
     }
 
+    .image-cover {
+        position: relative;
+        height: auto;
+        overflow: hidden;
+        padding-top: 100%;
+        background-position: 50% 50%;
+        background-size: cover;
+    }
+
+    .image-cover img {
+        right: 0;
+        width: 100%;
+        height: 100%;
+        bottom: 0;
+        left: 0;
+        top: 0;
+        position: absolute;
+        -o-object-position: 50% 50%;
+        object-position: 50% 50%;
+        -o-object-fit: cover;
+        object-fit: cover;
+        font-family: "object-fit: cover;";
+    }
+
 
 </style>
 
 <!--Products start-->
 <div class="content-7 p-md-3 p-lg-5">
-
-    <div class="products-list mt-5">
+    <div class="products-list mt-5 bg-white rounded-2">
         <div class="products products-bg ">
             <div class="header-title text-center pt-5">
                 <span class="thin-title">Chất lượng & Uy tín</span>
@@ -43,91 +66,152 @@
                     <div class="d-flex p-md-3 p-lg-5 justify-content-center align-items-center row">
                         <div class="d-flex row">
                             <div class="product-item col-lg-3 col-md-6 col-12">
-                                <a href=""><img src="<?=get_stylesheet_directory_uri()?>/assets/src/images/Rectangle%20332.png" alt="" class="image-product"></a>
+                                <div class="image-cover">
+                                    <a href=""><img src="<?=get_stylesheet_directory_uri()?>/assets/src/images/Rectangle%20332.png" alt="" class="image-product"></a>
+                                </div>
                                 <div class="d-flex flex-column">
-                                    <strong class="name-product">BODY CREAM</strong>
-                                    <strong class="price-product">123.000 đ</strong>
-                                </div>
-
-                            </div>
-                            <div class="product-item col-lg-3 col-md-6 col-12">
-                                <a href=""><img src="<?=get_stylesheet_directory_uri()?>/assets/src/images/Rectangle%20333.png" alt="" class="image-product"></a>
-                                <div class="d-flex flex-column p-3">
-                                    <strong class="name-product">BODY CREAM</strong>
+                                    <a class="name-product" href=""><strong >BODY CREAM</strong></a>
                                     <strong class="price-product">123.000 đ</strong>
                                 </div>
                             </div>
                             <div class="product-item col-lg-3 col-md-6 col-12">
-                                <a href=""><img src="<?=get_stylesheet_directory_uri()?>/assets/src/images/Rectangle%20339.png" alt="" class="image-product"></a>
-                                <div class="d-flex flex-column p-3">
-                                    <strong class="name-product">BODY CREAM</strong>
+                                <div class="image-cover">
+                                    <a href=""><img src="<?=get_stylesheet_directory_uri()?>/assets/src/images/Rectangle%20332.png" alt="" class="image-product"></a>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <a class="name-product" href=""><strong >BODY CREAM</strong></a>
                                     <strong class="price-product">123.000 đ</strong>
                                 </div>
                             </div>
                             <div class="product-item col-lg-3 col-md-6 col-12">
-                                <a href=""><img src="<?=get_stylesheet_directory_uri()?>/assets/src/images/Rectangle%20335.png" alt="" class="image-product"></a>
-                                <div class="d-flex flex-column p-3">
-                                    <strong class="name-product">BODY CREAM</strong>
-                                    <strong class="price-product">123.000 đ</strong>
+                                <div class="image-cover">
+                                    <a href=""><img src="<?=get_stylesheet_directory_uri()?>/assets/src/images/Rectangle%20332.png" alt="" class="image-product"></a>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="d-flex row">
-                            <div class="product-item col-lg-3 col-md-6 col-12">
-                                <a href=""><img src="<?=get_stylesheet_directory_uri()?>/assets/src/images/Rectangle%20336.png" alt="" class="image-product"></a>
-                                <div class="d-flex flex-column p-3">
-                                    <strong class="name-product">BODY CREAM</strong>
+                                <div class="d-flex flex-column">
+                                    <a class="name-product" href=""><strong >BODY CREAM</strong></a>
                                     <strong class="price-product">123.000 đ</strong>
                                 </div>
                             </div>
                             <div class="product-item col-lg-3 col-md-6 col-12">
-                                <a href=""><img src="<?=get_stylesheet_directory_uri()?>/assets/src/images/Rectangle%20337.png" alt="" class="image-product"></a>
-                                <div class="d-flex flex-column p-3">
-                                    <strong class="name-product">BODY CREAM</strong>
-                                    <strong class="price-product">123.000 đ</strong>
+                                <div class="image-cover">
+                                    <a href=""><img src="<?=get_stylesheet_directory_uri()?>/assets/src/images/Rectangle%20332.png" alt="" class="image-product"></a>
                                 </div>
-                            </div>
-                            <div class="product-item col-lg-3 col-md-6 col-12">
-                                <a href=""><img src="<?=get_stylesheet_directory_uri()?>/assets/src/images/Rectangle%20338.png" alt="" class="image-product"></a>
-                                <div class="d-flex flex-column p-3">
-                                    <strong class="name-product">BODY CREAM</strong>
-                                    <strong class="price-product">123.000 đ</strong>
-                                </div>
-                            </div>
-                            <div class="product-item col-lg-3 col-md-6 col-12">
-                                <a href=""><img src="<?=get_stylesheet_directory_uri()?>/assets/src/images/Rectangle%20339.png" alt="" class="image-product"></a>
-                                <div class="d-flex flex-column p-3">
-                                    <strong class="name-product">BODY CREAM</strong>
+                                <div class="d-flex flex-column">
+                                    <a class="name-product" href=""><strong >BODY CREAM</strong></a>
                                     <strong class="price-product">123.000 đ</strong>
                                 </div>
                             </div>
                         </div>
                         <div class="d-flex row">
                             <div class="product-item col-lg-3 col-md-6 col-12">
-                                <a href=""><img src="<?=get_stylesheet_directory_uri()?>/assets/src/images/Rectangle%20340.png" alt="" class="image-product"></a>
-                                <div class="d-flex flex-column p-3">
-                                    <strong class="name-product">BODY CREAM</strong>
+                                <div class="image-cover">
+                                    <a href=""><img src="<?=get_stylesheet_directory_uri()?>/assets/src/images/Rectangle%20332.png" alt="" class="image-product"></a>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <a class="name-product" href=""><strong >BODY CREAM</strong></a>
                                     <strong class="price-product">123.000 đ</strong>
                                 </div>
                             </div>
                             <div class="product-item col-lg-3 col-md-6 col-12">
-                                <a href=""><img src="<?=get_stylesheet_directory_uri()?>/assets/src/images/Rectangle%20341.png" alt="" class="image-product"></a>
-                                <div class="d-flex flex-column p-3">
-                                    <strong class="name-product">BODY CREAM</strong>
+                                <div class="image-cover">
+                                    <a href=""><img src="<?=get_stylesheet_directory_uri()?>/assets/src/images/Rectangle%20332.png" alt="" class="image-product"></a>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <a class="name-product" href=""><strong >BODY CREAM</strong></a>
                                     <strong class="price-product">123.000 đ</strong>
                                 </div>
                             </div>
                             <div class="product-item col-lg-3 col-md-6 col-12">
-                                <a href=""><img src="<?=get_stylesheet_directory_uri()?>/assets/src/images/Rectangle%20342.png" alt="" class="image-product"></a>
-                                <div class="d-flex flex-column p-3">
-                                    <strong class="name-product">BODY CREAM</strong>
+                                <div class="image-cover">
+                                    <a href=""><img src="<?=get_stylesheet_directory_uri()?>/assets/src/images/Rectangle%20332.png" alt="" class="image-product"></a>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <a class="name-product" href=""><strong >BODY CREAM</strong></a>
                                     <strong class="price-product">123.000 đ</strong>
                                 </div>
                             </div>
                             <div class="product-item col-lg-3 col-md-6 col-12">
-                                <a href=""><img src="<?=get_stylesheet_directory_uri()?>/assets/src/images/Rectangle%20343.png" alt="" class="image-product"></a>
-                                <div class="d-flex flex-column p-3">
-                                    <strong class="name-product">BODY CREAM</strong>
+                                <div class="image-cover">
+                                    <a href=""><img src="<?=get_stylesheet_directory_uri()?>/assets/src/images/Rectangle%20332.png" alt="" class="image-product"></a>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <a class="name-product" href=""><strong >BODY CREAM</strong></a>
+                                    <strong class="price-product">123.000 đ</strong>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex row">
+                            <div class="product-item col-lg-3 col-md-6 col-12">
+                                <div class="image-cover">
+                                    <a href=""><img src="<?=get_stylesheet_directory_uri()?>/assets/src/images/Rectangle%20332.png" alt="" class="image-product"></a>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <a class="name-product" href=""><strong >BODY CREAM</strong></a>
+                                    <strong class="price-product">123.000 đ</strong>
+                                </div>
+                            </div>
+                            <div class="product-item col-lg-3 col-md-6 col-12">
+                                <div class="image-cover">
+                                    <a href=""><img src="<?=get_stylesheet_directory_uri()?>/assets/src/images/Rectangle%20332.png" alt="" class="image-product"></a>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <a class="name-product" href=""><strong >BODY CREAM</strong></a>
+                                    <strong class="price-product">123.000 đ</strong>
+                                </div>
+                            </div>
+                            <div class="product-item col-lg-3 col-md-6 col-12">
+                                <div class="image-cover">
+                                    <a href=""><img src="<?=get_stylesheet_directory_uri()?>/assets/src/images/Rectangle%20332.png" alt="" class="image-product"></a>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <a class="name-product" href=""><strong >BODY CREAM</strong></a>
+                                    <strong class="price-product">123.000 đ</strong>
+                                </div>
+                            </div>
+                            <div class="product-item col-lg-3 col-md-6 col-12">
+                                <div class="image-cover">
+                                    <a href=""><img src="<?=get_stylesheet_directory_uri()?>/assets/src/images/Rectangle%20332.png" alt="" class="image-product"></a>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <a class="name-product" href=""><strong >BODY CREAM</strong></a>
+                                    <strong class="price-product">123.000 đ</strong>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex row">
+                            <div class="product-item col-lg-3 col-md-6 col-12">
+                                <div class="image-cover">
+                                    <a href=""><img src="<?=get_stylesheet_directory_uri()?>/assets/src/images/Rectangle%20332.png" alt="" class="image-product"></a>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <a class="name-product" href=""><strong >BODY CREAM</strong></a>
+                                    <strong class="price-product">123.000 đ</strong>
+                                </div>
+                            </div>
+                            <div class="product-item col-lg-3 col-md-6 col-12">
+                                <div class="image-cover">
+                                    <a href=""><img src="<?=get_stylesheet_directory_uri()?>/assets/src/images/Rectangle%20332.png" alt="" class="image-product"></a>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <a class="name-product" href=""><strong >BODY CREAM</strong></a>
+                                    <strong class="price-product">123.000 đ</strong>
+                                </div>
+                            </div>
+                            <div class="product-item col-lg-3 col-md-6 col-12">
+                                <div class="image-cover">
+                                    <a href=""><img src="<?=get_stylesheet_directory_uri()?>/assets/src/images/Rectangle%20332.png" alt="" class="image-product"></a>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <a class="name-product" href=""><strong >BODY CREAM</strong></a>
+                                    <strong class="price-product">123.000 đ</strong>
+                                </div>
+                            </div>
+                            <div class="product-item col-lg-3 col-md-6 col-12">
+                                <div class="image-cover">
+                                    <a href=""><img src="<?=get_stylesheet_directory_uri()?>/assets/src/images/Rectangle%20332.png" alt="" class="image-product"></a>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <a class="name-product" href=""><strong >BODY CREAM</strong></a>
                                     <strong class="price-product">123.000 đ</strong>
                                 </div>
                             </div>
