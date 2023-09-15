@@ -3,7 +3,7 @@
 </style>
 
 <div class="list-blogs pt-5 bg-dark">
-    <div class="container">
+    <div class="container-blogs-title d-flex align-items-center justify-content-center" style="height: 50vh; background: linear-gradient(to top, black, rgba(0, 0, 0, 0.127), rgba(255, 255, 255, 0)), url('<?= get_stylesheet_directory_uri(); ?>/assets/src/images/bg-blogs.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
         <h1 class="text-uppercase text-white text-center play-font my-5 pb-0 text-70">TIN TỨC</h1>
     </div>
     <div class="list-blogss  ">
@@ -12,11 +12,13 @@
                 <?php for ($i = 1; $i < 7; $i++) { ?>
                     <div class="col-md-6">
                         <div class="img-date">
-                          <a href="">  <img src="<?= get_stylesheet_directory_uri(); ?>/assets/src/images/blog_<?= $i ?>.png" alt="" class="img-fluid w-100 img-service"></a>
+                            <a href=""> <img src="<?= get_stylesheet_directory_uri(); ?>/assets/src/images/blog_<?= $i ?>.png" alt="" class="img-fluid w-100 img-service"></a>
                             <div class="blog-date manrope-font text-18 bg-brown py-2 px-3 text-white"> <i class="far fa-calendar-alt"></i> 01.01.2023</div>
                         </div>
                         <div class="title-blog pe-5 mt-4">
-                            <a href=""><h3 class="text-30 play-font fw-700 text-blue my-2">Eiusmod tempor incididunt ut labore.</h3></a>
+                            <a href="">
+                                <h3 class="text-30 play-font fw-700 text-blue my-2">Eiusmod tempor incididunt ut labore.</h3>
+                            </a>
                             <p class="text-18 be-font fw-200 ">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati.</p>
                         </div>
                     </div>

@@ -2,8 +2,8 @@
     @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&family=Manrope:wght@200;300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,900&display=swap');
 </style>
 
-<div class="services pt-5 bg-dark">
-    <div class="container">
+<div class="services  bg-dark">
+    <div class="container-service-title d-flex align-items-center justify-content-center" style="height: 50vh; background: linear-gradient(to top, black, rgba(0, 0, 0, 0.127), rgba(255, 255, 255, 0)), url('<?= get_stylesheet_directory_uri(); ?>/assets/src/images/bg-services.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
         <h1 class="text-uppercase text-white text-center play-font my-5 pb-0 text-70">DỊCH VỤ</h1>
     </div>
     <div class="premium-servicess bg-white mx-4">
@@ -67,4 +67,3 @@
         </div>
     </div>
 </div>
-
