@@ -1,0 +1,335 @@
+.header {
+    width: 100%;
+    min-height: 595px;
+    height:auto;
+    background-size: cover;
+    .breadcrumb-new {
+        .breadcrumb__text{
+            h2 {
+                color: #FFF;
+                text-align: center;
+                font-family: Playfair Display ,"sans-serif";
+                font-size: 70px;
+                font-style: normal;
+                font-weight: 900;
+                line-height: normal;
+                margin-top: 174px;
+            }
+        }
+        .breadcrumb__links {
+            a {
+                color: $white;
+                text-align: center;
+                font-family: Be Vietnam Pro,"sans-serif";
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 30px; /* 150% */
+                padding-left: 10px;
+            }
+            span {
+                color: #C89F63;
+                font-family: Be Vietnam Pro,"sans-serif";
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 30px;
+                padding-left: 10px;
+            }
+        }
+       
+    }
+}
+.details-service-wrapper {
+    width: 100%;
+    height: auto;
+    .title {
+        h2 {
+            color: #385469;
+            font-family: Playfair Display, "sans-serif";
+            font-size: 60px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 30px; /* 50% */
+            margin-top: 109px;
+            margin-bottom: 38px;
+        }
+        h3{
+            color: #385469;
+            text-align: center;
+            font-family: Playfair Display, "sans-serif";
+            font-size: 50px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: 30px; /* 60% */
+            margin-top: 88px;
+        }
+    }
+    .service__details__content{
+        margin-top: 66px;
+    }
+    .service__text {
+        margin-top: 49px;
+        p {
+            color: #33393D;
+            text-align: justify;
+            font-family: Be Vietnam Pro, "sans-serif";
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 30px; /* 166.667% */
+            opacity: 0.7;
+            margin-bottom: 8px;
+            
+        }
+    }
+    .book-btn {
+        border-bottom: 1px solid #E1E2E6;
+        padding-bottom: 84px;
+        a {
+            margin-top: 61px;
+            padding: 8px 70px;
+            text-decoration: none;
+            display: inline-block;
+            padding: 22px 65px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            background: $ground-yellow;
+            color: $white;
+            text-align: center;
+            font-family: Be Vietnam Pro, "sans-serif";
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            text-transform: uppercase;
+            &:hover{
+                opacity: 0.8;
+            }
+        }
+    }
+  
+    .service-details__slider {
+        margin-top: 63px;
+      
+            .slick-slide {
+                margin: 0 30px;
+            }
+      
+        .slick-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            width:46px;
+            height: 46px;
+            z-index: 2;
+            border-radius: 50%;
+            background-color: #d7cac6;
+            color: $white;
+            
+        }
+        .slick-prev {
+            left: -86px;
+        }
+        .slick-next {
+          
+            right: -86px;
+        }
+        .service-item {
+            .service-item__img {
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .service-item__text {
+                margin-top: 37px;
+                .icon {
+                    width: 57px;
+                    height: 57px;
+                    text-align: center;
+                   
+                    img{
+                        margin-left: 10px;
+                        padding-top: 12px;
+                    }
+                }
+                .service-item__title {
+                    margin-left: 15px;
+                    h4 {
+                        color: #33393D;
+                        font-family: Playfair Display, "sans-serif";
+                        font-size: 30px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 30px; /* 100% */
+                        margin-bottom: 8px;
+                    }
+                    p{
+                        color: #717577;
+                        font-family: Be Vietnam Pro, "sans-serif";
+                        font-size: 15px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 30px; /* 200% */
+                        opacity: 0.7;
+                    }
+                }
+            }
+        }
+        .slick-dots {
+            display: flex !important;
+            justify-items: center;
+            justify-content: center;
+            margin-top: 63px;
+            
+            button {
+                font-size: 0;
+                width: 18px; 
+                height: 18px;
+                border-radius: 100rem;
+                margin-left: 16px;
+                stroke-width: 1px;
+
+                opacity: 0.4;
+                background-color: rgb(30,22,14);
+                border: 1px solid $ground-yellow;
+            }
+            .slick-active {
+                button{
+                    background-color: $ground-yellow;
+                    width: 16px;
+                    
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1366px) {
+    .details-service-wrapper {
+    
+        .service-details__slider {
+            margin-top: 63px;
+           
+            .service-item {
+                .service-item__img {
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+                .service-item__text {
+                    margin-top: 37px;
+                    .icon {
+                        width: 30%;
+                        object-fit: cover;
+                        text-align: center;
+                        background-repeat: no-repeat;
+                       
+                        img{
+                            margin-left: 10px;
+                            padding-top: 12px;
+                        }
+                    } 
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .details-service-wrapper {
+      
+        .service-details__slider {
+            margin-top: 63px;
+           
+            .service-item {
+                .service-item__img {
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+                .service-item__text {
+                    margin-top: 37px;
+                    .icon {
+                        width: 67px;
+                        height: 67px;
+                        text-align: center;
+                       
+                        img{
+                            margin-left: 10px;
+                            padding-top: 12px;
+                        }
+                    }
+                    .title {
+                        margin-left: 20px;
+                        h3 {
+                            font-size: 42px;
+                        }
+                        p{
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+           
+        }
+    }
+}
+
+@media only screen and (max-width: 599px) {
+    .details-service-wrapper{
+        .title {
+            h2 {
+                font-size: 38px;
+            }
+            h3{
+                font-size: 38px;
+            }
+        }
+        .service-details__slider {
+            margin-top: 63px;
+           
+            .service-item {
+                .service-item__img {
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+                .service-item__text {
+                    margin-top: 37px;
+                    .icon {
+                        width: 64px;
+                        height: 64px;
+                        text-align: center;
+                       
+                        img{
+                            margin-left: 10px;
+                            padding-top: 12px;
+                        }
+                    }
+                    .title {
+                        margin-left: 20px;
+                        h3 {
+                            font-size: 22px;
+                        }
+                        p{
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+           
+        }
+    }
+}
