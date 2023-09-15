@@ -120,7 +120,7 @@ function my_wp_nav_menu_objects($items, $args) {
             $item->classes[] = 'active';
             $item->title .= ' <br>
             <span class="menu-item-icon px-1">
-                <i class="fa-brands fa-pagelines"></i>
+                <!--<i class="fa-brands fa-pagelines"></i>-->
             </span>';
         }
 

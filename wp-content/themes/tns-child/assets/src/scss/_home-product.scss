@@ -38,16 +38,18 @@
 
 .product-item {
   text-align: center;
+  margin-bottom: 20px;
 }
 
-.image-product {
+.image-cover {
   box-shadow: 4px 5px 4px 0px #E1E2E6;
 }
 
-.image-product:hover{
+.image-cover:hover{
   box-shadow: none;
   border: 1px solid #805346;
   transition: 0.3 ease-in-out;
+  border-radius: 10px;
 }
 
 .name-product {
@@ -55,6 +57,7 @@
   font-weight: bolder;
   padding-top: 1rem;
   font-size: 18px;
+  color: black;
 }
 
 .price-product{

@@ -225,3 +225,36 @@ th {
 		color: white !important;
 	}
 }
+
+.forminator-ui#forminator-module-17.forminator-design--default .forminator-input, .forminator-ui#forminator-module-17.forminator-design--default .forminator-input:hover, .forminator-ui#forminator-module-17.forminator-design--default .forminator-input:focus, .forminator-ui#forminator-module-17.forminator-design--default .forminator-input:active {
+	height: 60px !important;
+	flex-shrink: 0 !important;
+	border-radius: 5px !important;
+	background: rgba(255, 255, 255, 0.10) !important;
+	color: white !important;
+}
+
+.forminator-ui#forminator-module-17.forminator-design--default .forminator-select2 + .forminator-select .selection .select2-selection--single[role="combobox"]
+{	height: 55px !important;
+	flex-shrink: 0 !important;
+	border-radius: 5px !important;
+	background: rgba(255, 255, 255, 0.10) !important;
+	margin-top: 10px;
+	color: white !important;
+}
+
+.forminator-ui#forminator-module-17.forminator-design--default .forminator-textarea, .forminator-ui#forminator-module-17.forminator-design--default .forminator-textarea:hover, .forminator-ui#forminator-module-17.forminator-design--default .forminator-textarea:focus, .forminator-ui#forminator-module-17.forminator-design--default .forminator-textarea:active.forminator-ui#forminator-module-17.forminator-design--default .forminator-textarea, .forminator-ui#forminator-module-17.forminator-design--default .forminator-textarea:hover, .forminator-ui#forminator-module-17.forminator-design--default .forminator-textarea:focus, .forminator-ui#forminator-module-17.forminator-design--default .forminator-textarea:active {
+	height: 134px !important;
+	flex-shrink: 0 !important;
+	border-radius: 5px !important;
+	background: rgba(255, 255, 255, 0.10) !important;
+	color: white !important;
+}
+
+.forminator-ui#forminator-module-17.forminator-design--default select.forminator-select2 + .forminator-select .selection .select2-selection--single[role="combobox"] .select2-selection__rendered {
+	color: white !important;
+}
+
+.forminator-ui#forminator-module-17.forminator-design--default .forminator-button-submit {
+	background-color: $primary !important;
+}

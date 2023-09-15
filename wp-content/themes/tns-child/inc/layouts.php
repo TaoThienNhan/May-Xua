@@ -15,6 +15,9 @@ add_action('tns_landing', function (){
     get_template_part('template-parts/welcome');
     get_template_part('template-parts/home-service');
     get_template_part('template-parts/home-service-2');
+    get_template_part('template-parts/home-product');
+    get_template_part('template-parts/booking');
+    get_template_part('template-parts/gallery');
 });
 
 /**
