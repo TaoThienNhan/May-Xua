@@ -13,19 +13,23 @@
             </ol>
         </nav>
     </div>
-
-
     <div class="product-detail-area py-5 px-3  bg-white">
         <div class="container">
             <div class="row gx-5">
                 <div class="col-lg-6 row">
                     <div class="col-3 d-flex flex-column justify-content-between">
-                        <div class="bg-light-orange  border border-1 border-light d-flex justify-content-center align-items-center" style="border-radius: 10px;"> <img src="http://mayxua.vnnn:8888/wp-content/themes/tns-child/assets/src/images/pd-2.png" alt="" class="img-fluid w-100 thumbnail-img"></div>
-                        <div class="bg-light-orange  border border-1 border-light d-flex justify-content-center align-items-center" style="border-radius: 10px;"> <img src="http://mayxua.vnnn:8888/wp-content/themes/tns-child/assets/src/images/pd-2.png" alt="" class="img-fluid w-100 thumbnail-img"></div>
-                        <div class="bg-light-orange  border border-1 border-light d-flex justify-content-center align-items-center" style="border-radius: 10px;"> <img src="http://mayxua.vnnn:8888/wp-content/themes/tns-child/assets/src/images/pd-3.png" alt="" class="img-fluid w-100 thumbnail-img"></div>
+                        <div class="bg-light-orange  border border-1 border-light d-flex justify-content-center align-items-center" style="border-radius: 10px;">
+                            <img src="http://mayxua.vnnn:8888/wp-content/themes/tns-child/assets/src/images/pd-2.png" alt="" class="img-fluid w-100 thumbnail-img" onclick="changeImage(this)">
+                        </div>
+                        <div class="bg-light-orange  border border-1 border-light d-flex justify-content-center align-items-center" style="border-radius: 10px;">
+                            <img src="http://mayxua.vnnn:8888/wp-content/themes/tns-child/assets/src/images/pd-1.png" alt="" class="img-fluid w-100 thumbnail-img" onclick="changeImage(this)">
+                        </div>
+                        <div class="bg-light-orange  border border-1 border-light d-flex justify-content-center align-items-center" style="border-radius: 10px;">
+                            <img src="http://mayxua.vnnn:8888/wp-content/themes/tns-child/assets/src/images/pd-3.png" alt="" class="img-fluid w-100 thumbnail-img" onclick="changeImage(this)">
+                        </div>
                     </div>
                     <div class="col-9 px-0 bg-light-orange" style="border-radius: 10px;">
-                        <img src="http://mayxua.vnnn:8888/wp-content/themes/tns-child/assets/src/images/pd-4.png" alt="" class="img-fluid w-100 h-100 img-detail bg-light-orange border border-1 border-light">
+                        <img id="mainImage" src="http://mayxua.vnnn:8888/wp-content/themes/tns-child/assets/src/images/pd-4.png" alt="" class="img-fluid w-100 h-100 img-detail bg-light-orange border border-1 border-light">
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -47,7 +51,7 @@
                             <?php for ($i = 5; $i < 9; $i++) {  ?>
                                 <div class="col-md-3 col-6 text-center product-carosel">
                                     <a href="">
-                                        <img src="http://mayxua.vnnn:8888/wp-content/themes/tns-child/assets/src/images/pd-<?= $i ?>.png" alt="" class="d-block w-100 img-carosel  bg-light-orange rounded border border-1 border-light">
+                                        <div class="image-cover"> <img src="http://mayxua.vnnn:8888/wp-content/themes/tns-child/assets/src/images/pd-<?= $i ?>.png" alt="" class="d-block w-100 img-carosel  bg-light-orange  border border-1"></div>
                                     </a>
                                     <a href="">
                                         <h5 class="play-font text-18 fw-600 text-dark my-3">BODY CREAM</h5>
@@ -63,7 +67,7 @@
                             <?php for ($i = 5; $i < 9; $i++) {  ?>
                                 <div class="col-md-3 col-6 text-center product-carosel">
                                     <a href="">
-                                        <img src="http://mayxua.vnnn:8888/wp-content/themes/tns-child/assets/src/images/pd-<?= $i ?>.png" alt="" class="d-block w-100 img-carosel  bg-light-orange rounded border border-1 border-light">
+                                        <div class="image-cover"> <img src="http://mayxua.vnnn:8888/wp-content/themes/tns-child/assets/src/images/pd-<?= $i ?>.png" alt="" class="d-block w-100 img-carosel  bg-light-orange  border border-1"></div>
                                     </a>
                                     <a href="">
                                         <h5 class="play-font text-18 fw-600 text-dark my-3">BODY CREAM</h5>
@@ -84,3 +88,16 @@
         </div>
     </div>
 </div>
+
+<script>
+    var originalThumbnailSrc; // Để lưu trữ src ban đầu của hình nhỏ
+    function changeImage(thumbnail) {
+        var mainImage = document.getElementById('mainImage');
+        // Nếu chưa lưu src ban đầu của hình nhỏ, lưu nó
+        originalThumbnailSrc = mainImage.src;
+        // Thay đổi src của hình lớn
+        mainImage.src = thumbnail.src;
+        // Thay đổi src của hình nhỏ thành src của hình lớn
+        thumbnail.src = originalThumbnailSrc;
+    }
+</script>

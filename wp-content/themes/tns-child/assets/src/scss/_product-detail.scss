@@ -177,6 +177,9 @@
   .breadcrumb-item.active a {
     color: #c89f63; /* Giữ màu xám cho liên kết có lớp active */
   }
+  .breadcrumb-item + .breadcrumb-item::before {
+    color: white !important;
+  }
 
   .text-blue {
     color: #385469;
@@ -189,8 +192,8 @@
   .bg-brown {
     background-color: #c89f63;
   }
-  .bg-light-orange{
-    background-color: #FBFAF8;
+  .bg-light-orange {
+    background-color: #fbfaf8;
   }
 
   .carousel-control-prev i,
@@ -211,11 +214,35 @@
   }
   .product-carosel:hover {
     img {
-    border-radius: 10px;
+      border-radius: 10px;
       border: 1px solid #805346 !important;
     }
     h5 {
       color: #805346 !important;
     }
+  }
+
+  .image-cover {
+    position: relative;
+    height: auto;
+    overflow: hidden;
+    padding-top: 100%;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+
+  .image-cover img {
+    right: 0;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    position: absolute;
+    -o-object-position: 50% 50%;
+    object-position: 50% 50%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    font-family: "object-fit: cover;";
   }
 }
