@@ -63,7 +63,70 @@
             <img src="<?= get_stylesheet_directory_uri(); ?>/assets/src/images/vector.svg" alt="" class="img-fluid my-3">
         </div>
         <div class="other-service-content row mt-100">
-            <!-- có ở trang chủ -->
+            <div class="content-6">
+                <div id="carousel-meet-indicator" class="carousel slide mt-5">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carousel-meet-indicator" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carousel-meet-indicator" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carousel-meet-indicator" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carousel-meet-indicator" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carousel-meet-indicator" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                    </div>
+                    <div class="container">
+                        <div class="carousel-inner carousel-meet h-auto">
+                            <div class="carousel-item active">
+                                <div class="slider-1 col-10-offset-1 row">
+                                    <div class="col-lg-4 mt-5 mt-lg-0 col-12 item-other">
+                                        <div class="image-cover">
+                                            <img src="<?= get_stylesheet_directory_uri(); ?>/assets/src/images/service_1.png" alt="">
+                                        </div>
+                                        <div class="title-slider d-flex justify-content-start align-items-center mt-4">
+                                            <div class="bg-other-service rounded-circle p-3 me-3">
+                                                <img src="<?= get_stylesheet_directory_uri(); ?>/assets/src/images/logo-other-service.png" alt="">
+                                            </div>
+                                            <div class="text-other-service">
+                                                <h3 class="play-font text-30 fw-600 text-white mb-1">Gội đầu dưỡng sinh</h3>
+                                                <p class="be-font text-15 fw-200 text-white">Sed ut perspiciatis unde omnis iste natus</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item ">
+                                <div class="slider-1 col-10-offset-1 row">
+                                    <div class="col-lg-4 mt-5 mt-lg-0 col-12 item-other">
+                                        <div class="image-cover">
+                                            <img src="<?= get_stylesheet_directory_uri(); ?>/assets/src/images/service_1.png" alt="">
+                                        </div>
+                                        <div class="title-slider d-flex justify-content-start align-items-center mt-4">
+                                            <div class="bg-other-service rounded-circle p-3 me-3">
+                                                <img src="<?= get_stylesheet_directory_uri(); ?>/assets/src/images/logo-other-service.png" alt="">
+                                            </div>
+                                            <div class="text-other-service">
+                                                <h3 class="play-font text-30 fw-600 text-white mb-1">Gội đầu dưỡng sinh</h3>
+                                                <p class="be-font text-15 fw-200 text-white">Sed ut perspiciatis unde omnis iste natus</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carousel-meet-indicator"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon rounded-circle bg-warning p-3" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next " type="button" data-bs-target="#carousel-meet-indicator"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon rounded-circle bg-warning p-3" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button> -->
+            </div>
         </div>
     </div>
+</div>
+</div>
 </div>
