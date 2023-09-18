@@ -1,4 +1,4 @@
-.services  {
+.services {
   font-family: "Be Vietnam Pro", sans-serif;
   font-family: "Manrope", sans-serif;
   font-family: "Playfair Display", serif;
@@ -177,6 +177,72 @@
       box-shadow: 0 0 10px white;
     }
   }
+
+  // .content-6 {
+  //   position: relative;
+  // }
+
+  .other-service-content {
+    padding-bottom: 300px;
+    .carousel-meet {
+      position: relative;
+    }
+
+    .carousel-indicators {
+      position: absolute;
+      bottom: -100px;
+    }
+    .carousel-indicators button {
+      width: 20px !important;
+      height: 20px !important;
+      border-radius: 50% !important;
+      background-color: transparent !important;
+      border: 3px #b5b0ad solid;
+      margin: 0 4px;
+      transition: background-color 0.3s ease;
+    }
+
+    .carousel-indicators button.active {
+      background: #ffd46d !important;
+      background-size: 50% 50% !important;
+      background-position: center !important;
+      box-shadow: inset 0 0 0 5px rgb(0, 0, 0); /* Thêm khoảng trống 4px bằng box-shadow */
+    }
+
+    .image-cover {
+      position: relative;
+      height: auto;
+      overflow: hidden;
+      padding-top: 100%;
+      background-position: 50% 50%;
+      background-size: cover;
+    }
+
+    .image-cover img {
+      right: 0;
+      width: 100%;
+      height: 100%;
+      bottom: 0;
+      left: 0;
+      top: 0;
+      position: absolute;
+      -o-object-position: 50% 50%;
+      object-position: 50% 50%;
+      -o-object-fit: cover;
+      object-fit: cover;
+      font-family: "object-fit: cover;";
+    }
+    .bg-other-service {
+      transition: 0.3s;
+      background: #c89f63;
+    }
+    .item-other:hover {
+      .bg-other-service {
+        background: #805346;
+      }
+      h3 {
+        color: #c89f63 !important;
+      }
+    }
+  }
 }
-
-
