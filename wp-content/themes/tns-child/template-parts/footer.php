@@ -10,7 +10,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-5">
-                <img class="mb-5" src="<?= get_stylesheet_directory_uri() ?>/assets/src/images/logo.png" alt="">
+                <img class="mb-5" src="<?=get_field('website-logo', 'option')?>" alt="">
             </div>
         </div>
         <div class="row">
@@ -19,22 +19,22 @@
                     <div class="item mb-3 gap-3 d-flex justify-content-start align-items-center">
                         <img src="<?= get_stylesheet_directory_uri() ?>/assets/src/images/Icon awesome-address-book.png"
                              alt="">
-                        <span>1E Trần Quang Khải, P. Cái Khế, Q. Ninh Kiều, TP. Cần Thơ</span>
+                        <span><?=get_field('website-address', 'option')?></span>
                     </div>
                     <div class="item mb-3 gap-3 d-flex justify-content-start align-items-center">
-                        <img src="<?= get_stylesheet_directory_uri() ?>/assets/src/images/Icon awesome-address-book.png"
+                        <img src="<?= get_stylesheet_directory_uri() ?>/assets/src/images/Icon material-email.png"
                              alt="">
-                        <span>support@company.com</span>
+                        <span><?=get_field('website-email', 'option')?></span>
                     </div>
                     <div class="item mb-3 gap-3 d-flex justify-content-start align-items-center">
-                        <img src="<?= get_stylesheet_directory_uri() ?>/assets/src/images/Icon awesome-address-book.png"
+                        <img src="<?= get_stylesheet_directory_uri() ?>/assets/src/images/Icon awesome-phone-square-alt.png"
                              alt="">
-                        <span>0393-599120</span>
+                        <span><?=get_field('website-phone', 'option')?></span>
                     </div>
                     <div class="item mb-3 gap-3 d-flex justify-content-start align-items-center">
-                        <img src="<?= get_stylesheet_directory_uri() ?>/assets/src/images/Icon awesome-address-book.png"
+                        <img src="<?= get_stylesheet_directory_uri() ?>/assets/src/images/Icon material-computer.png"
                              alt="">
-                        <span>www.mayxua.com</span>
+                        <span><?=get_field('website-domain', 'option')?></span>
                     </div>
                 </div>
                 <span class="copyright text-secondary">2023 © Spa May Xưa. Designed by <a class="text-secondary"
@@ -42,42 +42,40 @@
             </div>
             <div class="col-md-2">
                 <div class="title">Danh Mục</div>
-                <ul>
-                    <li>Trang chủ</li>
-                    <li>Giới thiệu</li>
-                    <li>Dịch vụ</li>
-                    <li>Sản phẩm</li>
-                    <li>Bảng giá</li>
-                    <li>Liên hệ</li>
-                </ul>
+                <?php
+                wp_nav_menu(array(
+                    'theme_location' => 'danh-muc-menu',
+                    'container'      => false,
+                    'menu_class'     => 'menu-item',
+                ));
+                ?>
             </div>
             <div class="col-md-2">
                 <div class="title">Dịch Vụ</div>
-                <ul>
-                    <li>Trang chủ</li>
-                    <li>Giới thiệu</li>
-                    <li>Dịch vụ</li>
-                    <li>Sản phẩm</li>
-                    <li>Bảng giá</li>
-                    <li>Liên hệ</li>
-                </ul>
+                <?php
+                wp_nav_menu(array(
+                    'theme_location' => 'dịch-vu-menu',
+                    'container'      => false,
+                    'menu_class'     => 'menu-item',
+                ));
+                ?>
             </div>
             <div class="col-md-3 social-media">
                 <div class="title">Theo dõi chúng tôi</div>
                 <div class="content d-flex mb-3">
-                    <a href="#" class="icon">
+                    <a href="<?=get_field('youtube', 'option')?>" class="icon">
                         <img src="<?= get_stylesheet_directory_uri() ?>/assets/src/images/yt-icon.png" alt="">
                     </a>
-                    <a href="#" class="icon">
+                    <a href="<?=get_field('tiktok', 'option')?>" class="icon">
                         <img src="<?= get_stylesheet_directory_uri() ?>/assets/src/images/tiktok-icon.png" alt="">
                     </a>
-                    <a href="#" class="icon">
+                    <a href="<?=get_field('facebook', 'option')?>" class="icon">
                         <img src="<?= get_stylesheet_directory_uri() ?>/assets/src/images/fb-icon.png" alt="">
                     </a>
-                    <a href="#" class="icon">
+                    <a href="<?=get_field('messenger', 'option')?>" class="icon">
                         <img src="<?= get_stylesheet_directory_uri() ?>/assets/src/images/mes.png" alt="">
                     </a>
-                    <a href="#" class="icon">
+                    <a href="<?=get_field('zalo', 'option')?>" class="icon">
                         <img src="<?= get_stylesheet_directory_uri() ?>/assets/src/images/zalo.png" alt="">
                     </a>
                 </div>

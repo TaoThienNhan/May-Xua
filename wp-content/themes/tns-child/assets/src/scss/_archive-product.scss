@@ -1,0 +1,23 @@
+.woocommerce-ordering {
+  select {
+    padding: 10px 5px 10px 5px;
+    border: 1px solid #E1E2E6;
+    color: #69747C;
+    outline: 0;
+  }
+}
+
+.search-form {
+  margin-left: 10px;
+  color: #69747C;
+  input {
+    padding: 10px 5px 10px 5px;
+    border: 1px solid #E1E2E6;
+    outline: 0;
+  }
+
+  input[type="submit"] {
+    background: white !important;
+    color: #69747C;
+  }
+}

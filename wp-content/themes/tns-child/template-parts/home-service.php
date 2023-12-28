@@ -37,149 +37,62 @@
         <div class="carousel-bg">
             <div class="container ">
                 <div class="carousel-inner carousel-meet h-auto">
-                    <div class="carousel-item p-5  active">
-                        <div class="slider-1 d-flex justify-content-center align-items-center row">
-                            <div class="d-flex row col-12 col-lg-6 banner-service">
-                                <div class="col-12 col-lg-8 img-right-frist" style="
-                                    background: url(<?=get_stylesheet_directory_uri()?>/assets/src/images/Rectangle%20319.png);
-                                    background-size: cover;
-                                    /*width: 378px;*/
-                                    height: 733px;"></div>
-                                <div class="col-12 col-lg-8 d-md-none d-lg-block img-right-last" style="
-                                    background: url(<?=get_stylesheet_directory_uri()?>/assets/src/images/Rectangle%20320.png);
-                                    background-size: cover;
-                                    width: 180px;
-                                    height: 733px;"></div>
-                            </div>
-                            <div class="silder-text col-12 col-lg-6">
-                                <div class="title-header d-flex">
-                                    <span></span>
-                                    <strong>Trải nghiệm dịch vụ chuyên nghiệp</strong>
-                                </div>
+                    <?php
+                        $items = get_field('tndv', 'option');
+                        $firstSlide = true;
 
-                                <h4 class="text-40 text-center text-title my-3">Gọi đầu Dưỡng sinh</h4>
-                                <img src="<?=get_stylesheet_directory_uri()?>/assets/src/images/Vector.png" class="d-inline vector-logo col-12 col-lg-6" alt="...">
 
-                                <br>
-                                <b class="">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                                    laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae
-                                    vitae dicta sunt explicabo.</b>
-                                <br>
-                                <b>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
-                                    magni dolores eos qui ratione voluptatem sequi nesciunt.</b>
-                                <div class="d-flex row align-items-center justify-content-center pt-3 btn-list-under">
-                                    <a href=""class="btn btn-under shadow-lg text-20 px-5 my- col-lg-6 col-12">Đặt Lịch</a>
-                                    <div class="d-flex col-lg-6 col-12 align-items-center justify-content-center">
-                                        <div class="col-lg-0 col-3"></div>
-                                        <div class="col-lg-4 col-2 icon-inner">
-                                            <div class="bg-icon"><a href="" ><img src="<?=get_stylesheet_directory_uri()?>/assets/src/images/Group6579.png"  alt=""></a></div>
-                                        </div>
-                                        <div class="col-lg-4 col-2 icon-inner">
-                                            <div class="bg-icon"><a href="" ><img src="<?=get_stylesheet_directory_uri()?>/assets/src/images/Group6578.png"  alt=""></a></div>
-                                        </div>
-                                        <div class="col-lg-4 col-2 icon-inner">
-                                            <div class="bg-icon"><a href="" ><img src="<?=get_stylesheet_directory_uri()?>/assets/src/images/Group.png"  alt=""></a></div>
-                                        </div>
-                                        <div class="col-lg-0 col-3"></div>
+                    foreach ($items as $item) {
+                            $slideClass = $firstSlide ? 'active' : '';
+                            $firstSlide = false;
+                            ?>
+                            <div class="carousel-item p-5 <?=$slideClass?>">
+                                <div class="slider-1 d-flex justify-content-center align-items-center row">
+                                    <div class="d-flex row col-12 col-lg-6 banner-service">
+                                        <div class="col-12 col-lg-8 img-right-frist" style="
+                                            background: url('<?=$item['tndv-main-image']?>');
+                                            background-size: cover;
+                                            /*width: 378px;*/
+                                            height: 733px;"></div>
+                                        <div class="col-12 col-lg-8 d-md-none d-lg-block img-right-last" style="
+                                            background: url('<?=$item['tndv-sub-image']?>');
+                                            background-size: cover;
+                                            width: 180px;
+                                            height: 733px;"></div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item p-5  ">
-                        <div class="slider-1 d-flex justify-content-center align-items-center row">
-                            <div class="d-flex row col-12 col-lg-6">
-                                <div class="col-12 col-lg-8 img-right-frist" style="
-                                    background: url(<?=get_stylesheet_directory_uri()?>/assets/src/images/Rectangle%20319.png);
-                                    background-size: cover;
-                                    /*width: 378px;*/
-                                    height: 733px;"></div>
-                                <div class="col-12 col-lg-8 d-md-none d-lg-block img-right-last" style="
-                                    background: url(<?=get_stylesheet_directory_uri()?>/assets/src/images/Rectangle%20320.png);
-                                    background-size: cover;
-                                    width: 180px;
-                                    height: 733px;"></div>
-                            </div>
-                            <div class="silder-text col-12 col-lg-6">
-                                <div class="title-header d-flex">
-                                    <span></span>
-                                    <strong>Trải nghiệm dịch vụ chuyên nghiệp</strong>
-                                </div>
-
-                                <h4 class="text-40 text-center text-title my-3">Gọi đầu Dưỡng sinh</h4>
-                                <img src="<?=get_stylesheet_directory_uri()?>/assets/src/images/Vector.png" class="d-inline vector-logo col-12 col-lg-6" alt="...">
-
-                                <br>
-                                <b class="">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                                    laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae
-                                    vitae dicta sunt explicabo.</b>
-                                <br>
-                                <b>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
-                                    magni dolores eos qui ratione voluptatem sequi nesciunt.</b>
-                                <div class="d-flex row align-items-center justify-content-center pt-3 btn-list-under">
-                                    <a href=""class="btn btn-under shadow-lg text-20 px-5 my- col-lg-6 col-12">Đặt Lịch</a>
-                                    <div class="d-flex col-lg-6 col-12">
-                                        <div class="col-4 icon-inner">
-                                            <div class="bg-icon"><a href="" ><img src="<?=get_stylesheet_directory_uri()?>/assets/src/images/Group6579.png"  alt=""></a></div>
+                                    <div class="silder-text col-12 col-lg-6">
+                                        <div class="title-header d-flex">
+                                            <span></span>
+                                            <strong><?=$item['tndv-sub-title']?></strong>
                                         </div>
-                                        <div class="col-4 icon-inner">
-                                            <div class="bg-icon"><a href="" ><img src="<?=get_stylesheet_directory_uri()?>/assets/src/images/Group6578.png"  alt=""></a></div>
-                                        </div>
-                                        <div class="col-4 icon-inner">
-                                            <div class="bg-icon"><a href="" ><img src="<?=get_stylesheet_directory_uri()?>/assets/src/images/Group.png"  alt=""></a></div>
+
+                                        <h4 class="text-40 text-center text-title my-3"><?=$item['tndv-main-title']?></h4>
+                                        <img src="<?=get_stylesheet_directory_uri()?>/assets/src/images/Vector.png" class="d-inline vector-logo col-12 col-lg-6" alt="...">
+
+                                        <br>
+                                        <?=$item['tndv-content']?>
+                                        <div class="d-flex row align-items-center justify-content-center pt-3 btn-list-under">
+                                            <a href="/lien-he" class="btn btn-under shadow-lg text-20 px-5 my- col-lg-6 col-12">Đặt Lịch</a>
+                                            <div class="d-flex col-lg-6 col-12 align-items-center justify-content-center">
+                                                <div class="col-lg-0 col-3"></div>
+                                                <div class="col-lg-4 col-2 icon-inner">
+                                                    <div class="bg-icon"><a href="<?=get_field('facebook', 'option')?>" ><img src="<?=get_stylesheet_directory_uri()?>/assets/src/images/Group6579.png"  alt=""></a></div>
+                                                </div>
+                                                <div class="col-lg-4 col-2 icon-inner">
+                                                    <div class="bg-icon"><a href="<?=get_field('messenger', 'option')?>" ><img src="<?=get_stylesheet_directory_uri()?>/assets/src/images/Group6578.png"  alt=""></a></div>
+                                                </div>
+                                                <div class="col-lg-4 col-2 icon-inner">
+                                                    <div class="bg-icon"><a href="<?=get_field('zalo', 'option')?>" ><img src="<?=get_stylesheet_directory_uri()?>/assets/src/images/Group.png"  alt=""></a></div>
+                                                </div>
+                                                <div class="col-lg-0 col-3"></div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item p-5  ">
-                        <div class="slider-1 d-flex justify-content-center align-items-center row">
-                            <div class="d-flex row col-12 col-lg-6">
-                                <div class="col-12 col-lg-8 img-right-frist" style="
-                                    background: url(<?=get_stylesheet_directory_uri()?>/assets/src/images/Rectangle%20319.png);
-                                    background-size: cover;
-                                    /*width: 378px;*/
-                                    height: 733px;"></div>
-                                <div class="col-12 col-lg-8 d-md-none d-lg-block img-right-last" style="
-                                    background: url(<?=get_stylesheet_directory_uri()?>/assets/src/images/Rectangle%20320.png);
-                                    background-size: cover;
-                                    width: 180px;
-                                    height: 733px;"></div>
-                            </div>
-                            <div class="silder-text col-12 col-lg-6">
-                                <div class="title-header d-flex">
-                                    <span></span>
-                                    <strong>Trải nghiệm dịch vụ chuyên nghiệp</strong>
-                                </div>
-
-                                <h4 class="text-40 text-center text-title my-3">Gọi đầu Dưỡng sinh</h4>
-                                <img src="<?=get_stylesheet_directory_uri()?>/assets/src/images/Vector.png" class="d-inline vector-logo col-12 col-lg-6" alt="...">
-
-                                <br>
-                                <b class="">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                                    laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae
-                                    vitae dicta sunt explicabo.</b>
-                                <br>
-                                <b>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
-                                    magni dolores eos qui ratione voluptatem sequi nesciunt.</b>
-                                <div class="d-flex row align-items-center justify-content-center pt-3 btn-list-under">
-                                    <a href=""class="btn btn-under shadow-lg text-20 px-5 my- col-lg-6 col-12">Đặt Lịch</a>
-                                    <div class="d-flex col-lg-6 col-12">
-                                        <div class="col-4 icon-inner">
-                                            <div class="bg-icon"><a href="" ><img src="<?=get_stylesheet_directory_uri()?>/assets/src/images/Group6579.png"  alt=""></a></div>
-                                        </div>
-                                        <div class="col-4 icon-inner">
-                                            <div class="bg-icon"><a href="" ><img src="<?=get_stylesheet_directory_uri()?>/assets/src/images/Group6578.png"  alt=""></a></div>
-                                        </div>
-                                        <div class="col-4 icon-inner">
-                                            <div class="bg-icon"><a href="" ><img src="<?=get_stylesheet_directory_uri()?>/assets/src/images/Group.png"  alt=""></a></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                            <?php
+                        }
+                    ?>
                 </div>
             </div>
         </div>
