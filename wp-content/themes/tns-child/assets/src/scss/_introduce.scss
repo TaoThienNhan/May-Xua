@@ -1,0 +1,92 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.menu {
+  width: 98%;
+  height: 25%;
+  flex-shrink: 0;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.50);
+  background: rgba(0, 0, 0, 0.30);
+  backdrop-filter: blur(40px);
+}
+.menu .col-md-2 .logo-menu{
+  width: 40%;
+  height: 65%;
+}
+.menu-between {
+  color: rgba(255, 255, 255, 0.50);
+  text-align: center;
+  font-family: Be Vietnam Pro;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  display: flex;
+  place-items: center;
+}
+.about {
+  display:grid;
+  place-items:center;
+}
+.menu-between a {
+  color: #FFF;
+  font-family: Be Vietnam Pro;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  margin-inline: 10px
+}
+.menu-contact {
+  display: grid;
+  place-items: center;
+}
+.contact {
+  display:flex;
+  place-items: center;
+
+}
+.contact p {
+  color: var(--White, #FFF);
+  text-align: center;
+  font-family: Manrope;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-inline: 5px;
+  margin-top: 16px;
+}
+.contact .booking {
+  border-radius: 5px;
+  background: var(--Ground-yellow, #C89F63);
+  width: 40%;
+  color: var(--White, #FFF);
+  text-align: center;
+  font-family: Be Vietnam Pro;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-decoration: none;
+  padding: 10px;
+  margin-inline: 5px;
+}
+.logo-contact {
+  width: 10%;
+}
+.heading {
+  color: #FFF;
+  text-align: center;
+  font-family: Playfair Display;
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}

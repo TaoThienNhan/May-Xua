@@ -37,7 +37,7 @@
                 padding-left: 10px;
             }
         }
-       
+
     }
 }
 .details-service-wrapper {
@@ -80,7 +80,7 @@
             line-height: 30px; /* 166.667% */
             opacity: 0.7;
             margin-bottom: 8px;
-            
+
         }
     }
     .book-btn {
@@ -95,7 +95,7 @@
             justify-content: center;
             align-items: center;
             border-radius: 5px;
-            background: $ground-yellow;
+            background: $primary;
             color: $white;
             text-align: center;
             font-family: Be Vietnam Pro, "sans-serif";
@@ -109,14 +109,14 @@
             }
         }
     }
-  
+
     .service-details__slider {
         margin-top: 63px;
-        
-            .slick-slide {
-                margin: 0 30px;
-            }
-      
+
+        .slick-slide {
+            margin: 0 30px;
+        }
+
         .slick-arrow {
             position: absolute;
             top: 50%;
@@ -129,13 +129,13 @@
             border-radius: 50%;
             background-color: #d7cac6;
             color: $white;
-            
+
         }
         .slick-prev {
             left: -86px;
         }
         .slick-next {
-          
+
             right: -86px;
         }
         .service-item {
@@ -152,7 +152,7 @@
                     width: 57px;
                     height: 57px;
                     text-align: center;
-                   
+
                     img{
                         margin-left: 10px;
                         padding-top: 12px;
@@ -186,10 +186,10 @@
             justify-items: center;
             justify-content: center;
             margin-top: 63px;
-            
+
             button {
                 font-size: 0;
-                width: 18px; 
+                width: 18px;
                 height: 18px;
                 border-radius: 100rem;
                 margin-left: 16px;
@@ -197,13 +197,13 @@
 
                 opacity: 0.4;
                 background-color: rgb(30,22,14);
-                border: 1px solid $ground-yellow;
+                border: 1px solid $primary;
             }
             .slick-active {
                 button{
-                    background-color: $ground-yellow;
+                    background-color: $primary;
                     width: 16px;
-                    
+
                 }
             }
         }
@@ -212,10 +212,10 @@
 
 @media only screen and (min-width: 1024px) and (max-width: 1366px) {
     .details-service-wrapper {
-    
+
         .service-details__slider {
             margin-top: 63px;
-           
+
             .service-item {
                 .service-item__img {
                     img {
@@ -231,12 +231,12 @@
                         object-fit: cover;
                         text-align: center;
                         background-repeat: no-repeat;
-                       
+
                         img{
                             margin-left: 10px;
                             padding-top: 12px;
                         }
-                    } 
+                    }
                 }
             }
         }
@@ -245,10 +245,10 @@
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
     .details-service-wrapper {
-      
+
         .service-details__slider {
             margin-top: 63px;
-           
+
             .service-item {
                 .service-item__img {
                     img {
@@ -263,7 +263,7 @@
                         width: 67px;
                         height: 67px;
                         text-align: center;
-                       
+
                         img{
                             margin-left: 10px;
                             padding-top: 12px;
@@ -280,7 +280,7 @@
                     }
                 }
             }
-           
+
         }
     }
 }
@@ -297,7 +297,7 @@
         }
         .service-details__slider {
             margin-top: 63px;
-           
+
             .service-item {
                 .service-item__img {
                     img {
@@ -312,7 +312,7 @@
                         width: 64px;
                         height: 64px;
                         text-align: center;
-                       
+
                         img{
                             margin-left: 10px;
                             padding-top: 12px;
@@ -329,7 +329,7 @@
                     }
                 }
             }
-           
+
         }
     }
 }

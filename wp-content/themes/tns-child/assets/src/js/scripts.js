@@ -34,12 +34,59 @@ jQuery(function ($) {
         slidesToShow: 3,
         slidesToScroll: 1,
         arrows: false,
-        dots: true,
+        dots: false,
         responsive: [
             {
                 breakpoint: 769,
                 settings: {
                     slidesToShow: 1
+                }
+            },
+
+        ]
+    });
+
+    $('.product-slider').slick({
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        arrows: true,
+        prevArrow:
+            `<button type='button' class='slick-prev pull-left slick-arrow'><i class="fa-solid fa-angle-left"></i></button>`,
+        nextArrow:
+            `<button type='button' class='slick-next pull-right slick-arrow'><i class="fa-solid fa-angle-right"></i></button>`,
+        responsive: [
+            {
+                breakpoint: 769,
+                settings: {
+                    slidesToShow: 1
+                }
+            },
+
+        ]
+    });
+
+    $('.service-details__slider').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: true,
+        prevArrow:
+            `<button type='button' class='slick-prev pull-left slick-arrow'><i class="fa-solid fa-angle-left"></i></button>`,
+        nextArrow:
+            `<button type='button' class='slick-next pull-right slick-arrow'><i class="fa-solid fa-angle-right"></i></button>`,
+        responsive: [
+            {
+                breakpoint: 1366,
+                settings: {
+                    arrows: false,
+                }
+            },
+            {
+                breakpoint: 769,
+                settings: {
+                    slidesToShow: 1,
+                    arrows: false,
                 }
             },
 
@@ -101,5 +148,13 @@ jQuery(function ($) {
                 }
             },
         ]
+    });
+});
+
+jQuery(document).ready(function($) {
+    $('.img-gallery a').on('click', function(e) {
+        e.preventDefault();
+        var image_url = $(this).attr('href');
+        $('.main-image img').attr('src', image_url).removeAttr('srcset');
     });
 });

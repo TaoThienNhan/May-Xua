@@ -1,0 +1,39 @@
+.pagination {
+  list-style-type: none;
+  ul {
+    list-style-type: none !important;
+    display: flex;
+    flex-wrap: wrap;
+
+    .active a {
+      color: $primary !important;
+    }
+
+    li {
+      list-style-type: none !important;
+      text-align: center;
+      background-color: white;
+      margin: 7px;
+      border-radius: 10px;
+      border: 1px solid gray;
+
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        color: black !important;
+      }
+    }
+  }
+
+  .page-numbers {
+    list-style-type: none !important;
+    text-align: center;
+    background-color: white;
+    margin: 10px;
+    border-radius: 10px;
+    color: black !important;
+  }
+}

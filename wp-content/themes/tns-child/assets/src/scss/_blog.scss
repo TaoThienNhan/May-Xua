@@ -1,4 +1,4 @@
-.services {
+.list-blogs {
   font-family: "Be Vietnam Pro", sans-serif;
   font-family: "Manrope", sans-serif;
   font-family: "Playfair Display", serif;
@@ -137,112 +137,62 @@
     font-family: "Playfair Display", sans-serif;
   }
   .manrope-font {
-    font-family: "Playfair Display", sans-serif;
+    font-family: "Manrope", sans-serif;
   }
 
-  .btn-white {
+  .list-blogss {
     background-color: white;
-  }
-  .title-premium {
-    color: #c89f63;
+    padding-top: 100px;
   }
 
-  .text-premium {
+  .text-blue {
     color: #385469;
   }
-  .btn-right {
-    bottom: 0;
-    right: 0;
+
+  .bg-brown {
+    background: #c89f63;
   }
 
-  .btn-left {
-    bottom: 0;
-    left: 0;
-  }
-
-  .premium-servicess {
-    border-radius: 2vh;
-    padding: 100px 20px;
-    .img-service {
-      min-width: 150px;
-      max-height: 500px;
+  .img-date {
+    position: relative;
+    img {
+      border-radius: 5px;
+      min-width: 200px;
+      max-width: 650px;
+      max-height: 420px;
     }
-    .col-left {
-      left: 5%;
-    }
-    .col-right {
-      right: 5%;
-    }
-    .service-box-content {
-      box-shadow: 0 0 10px white;
-    }
-  }
-
-  // .content-6 {
-  //   position: relative;
-  // }
-
-  .other-service-content {
-    padding-bottom: 300px;
-    .carousel-meet {
-      position: relative;
-    }
-
-    .carousel-indicators {
+    .blog-date {
       position: absolute;
-      bottom: -100px;
+      bottom: -20px;
+      border-radius: 10px;
+      word-spacing: 5px;
     }
-    .carousel-indicators button {
-      width: 20px !important;
-      height: 20px !important;
-      border-radius: 50% !important;
-      background-color: transparent !important;
-      border: 3px #b5b0ad solid;
-      margin: 0 4px;
-      transition: background-color 0.3s ease;
-    }
+  }
 
-    .carousel-indicators button.active {
-      background: #ffd46d !important;
-      background-size: 50% 50% !important;
-      background-position: center !important;
-      box-shadow: inset 0 0 0 5px rgb(0, 0, 0); /* Thêm khoảng trống 4px bằng box-shadow */
-    }
+  /* Ẩn border cho các page-item chứa số 1, 2, và 3 */
+  .pagination .page-item:nth-child(2) a.page-link,
+  .pagination .page-item:nth-child(3) a.page-link,
+  .pagination .page-item:nth-child(4) a.page-link {
+    border: 1px solid rgb(255, 255, 255);
+  }
 
-    .image-cover {
-      position: relative;
-      height: auto;
-      overflow: hidden;
-      padding-top: 100%;
-      background-position: 50% 50%;
-      background-size: cover;
-    }
+  /* Đổi màu nền cho trang đang kích hoạt (page-item active) */
+  .pagination .page-item.active a.page-link {
+    background: white;
+    color: #c89f63; /* Đổi màu chữ trắng để đảm bảo độ tương phản */
+  }
 
-    .image-cover img {
-      right: 0;
-      width: 100%;
-      height: 100%;
-      bottom: 0;
-      left: 0;
-      top: 0;
-      position: absolute;
-      -o-object-position: 50% 50%;
-      object-position: 50% 50%;
-      -o-object-fit: cover;
-      object-fit: cover;
-      font-family: "object-fit: cover;";
-    }
-    .bg-other-service {
-      transition: 0.3s;
-      background: #c89f63;
-    }
-    .item-other:hover {
-      .bg-other-service {
-        background: #805346;
-      }
-      h3 {
-        color: #c89f63 !important;
-      }
-    }
+  /* Đổi màu nền cho trang không kích hoạt (page-item) */
+  .pagination .page-item:not(.active) a.page-link {
+    color: rgb(0, 0, 0); /* Đổi màu chữ trắng để đảm bảo độ tương phản */
+  }
+
+  /* Thay đổi giao diện của nút trước và nút sau */
+  .pagination .page-item:first-child a.page-link,
+  .pagination .page-item:last-child a.page-link {
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.121);
+    color: rgba(0, 0, 0, 0.714);
+    padding: 5px 20px;
   }
 }

@@ -170,7 +170,7 @@ return array(
     'RankMath\\Paper\\Author' => $baseDir . '/includes/frontend/paper/class-author.php',
     'RankMath\\Paper\\BP_Group' => $baseDir . '/includes/modules/buddypress/paper/class-bp-group.php',
     'RankMath\\Paper\\BP_User' => $baseDir . '/includes/modules/buddypress/paper/class-bp-user.php',
-    'RankMath\\Paper\\Blog' => $baseDir . '/includes/frontend/paper/class-blog.php',
+    'RankMath\\Paper\\Blog' => $baseDir . '/includes/frontend/paper/class-archive.php',
     'RankMath\\Paper\\Date' => $baseDir . '/includes/frontend/paper/class-date.php',
     'RankMath\\Paper\\Error_404' => $baseDir . '/includes/frontend/paper/class-error-404.php',
     'RankMath\\Paper\\IPaper' => $baseDir . '/includes/frontend/paper/interface-paper.php',

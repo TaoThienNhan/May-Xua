@@ -1,5 +1,5 @@
 <div class="header-wrapper" style="
-	background: url(<?= get_stylesheet_directory_uri() ?>/assets/src/images/header-banner.png);
+	background: url('<?=get_field('header-banner', 'option')?>');
 	background-size: cover;
 	background-repeat: no-repeat;
 	">
@@ -7,7 +7,9 @@
 		<div class="row d-flex align-items-center p-5">
 			<div class="col-md-2">
 				<div class="logo text-center">
-					<img src="<?= get_stylesheet_directory_uri() ?>/assets/src/images/logo.png" alt="">
+					<a href="/">
+						<img src="<?= get_stylesheet_directory_uri() ?>/assets/src/images/logo.png" alt="">
+					</a>
 				</div>
 			</div>
 			<div class="col-md-7 d-none d-lg-block">
